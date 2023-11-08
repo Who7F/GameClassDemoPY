@@ -25,7 +25,7 @@ class creature:
         if(self.state == True):
             if(roll > self.defence):
                 print('##')
-                print(combatText.txt['attack'][ randint(0, 5)])
+                print(combatText.txt['attack'][ randint(0, len(combatText.txt['attack'])-1)])
                 self.health -= damage
                 print(self.health)
                 self.state = self.IsAlive()
